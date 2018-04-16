@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> </title>
+ <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+ <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+ <script>
+   $(document).ready(function(){
+  $(".happy").click(function(){
+    $(".container").slideToggle("slow");
+  });
+});
+
+ </script>
+</head>
+<style>
+     .happy{
+            background-color:rgb(231, 229, 229);
+            text-align: center; 
+            order:solid 1px goldenrod;
+           padding:5px; 
+           }
+    .happy:hover{
+        cursor:pointer;
+    }
+    .container{
+        background-color:rgb(231, 229, 229);
+           text-align:center;
+           border:solid 1px goldenrod;
+        display: inline-block;
+        display:none;
+        padding: 300px 620px;
+        
+          
+    }
+    .ss{
+        width:10px;
+        height:10px;
+        background:#2196F3;
+        box-shadow: 2px 2px 2px red; 
+        border-radius:50%;
+        float:left;
+        margin-left:5px;
+        margin-bottom: 100px;
+        animation:myFirst 2s ease-in-out infinite; 
+    }
+    .two{animation-delay: 200ms;}
+    .three{ animation-delay: 400ms;}
+    .four{ animation-delay:600ms; }
+    .five{ animation-delay: 800ms}
+    @keyframes myFirst{
+        from {opacity: 0.8}
+        to{opacity: 0}
+    }
+    @-webkit-keyframes ff{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes ff{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+.ff i{
+    display: inline-block;
+    width: 10px;
+    height: 50px;
+    margin: 0 2px;
+    background: rgb(218, 85, 85);
+    border-radius: 5px;
+    -webkit-animation: ff 1s ease-in-out 0.1s infinite;
+    animation: ff 1s ease-in-out 0.1s infinite;
+    
+}
+.ff{
+    float:left;
+    clear:left;
+}
+
+.ff i:nth-child(1){
+    -webkit-animation: ff 1s ease-in-out 0.1s infinite;
+    animation: ff 1s ease-in-out 0.1s infinite;
+}
+.ff i:nth-child(2){
+    -webkit-animation: ff 1s ease-in-out 0.2s infinite;
+    animation: ff 1s ease-in-out 0.2s infinite;
+}   
+.ff i:nth-child(3){
+    -webkit-animation: ff 1s ease-in-out 0.3s infinite;
+    animation: ff 1s ease-in-out 0.3s infinite;
+}   
+.ff i:nth-child(4){
+    -webkit-animation: ff 1s ease-in-out 0.4s infinite;
+    animation: ff 1s ease-in-out 0.4s infinite;
+}   
+.ff i:nth-child(5){
+    -webkit-animation: ff 1s ease-in-out 0.5s infinite;
+    animation: ff 1s ease-in-out 0.5s infinite;
+}    
+
+</style>
+<body>
+    <div class="happy">下滑$上滑</div>
+    <div class="container">
+    <div class="ss one"></div>    
+    <div class="ss two"></div>
+    <div class="ss three"></div>
+    <div class="ss four"></div>   
+    <div class="ss five"></div>
+    <div class="ff">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </div>
+        
+</div>
+</body>
