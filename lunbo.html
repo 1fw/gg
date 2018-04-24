@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    div.dd1{
+      width:100%;
+      height:25px;
+      background-color:rgb(228, 225, 225);
+      position:relative; 
+      text-justify:center;  
+    }
+   
+    .de1{ margin-left:200px;
+    margin-top:5px; 
+    position:absolute;
+    float: left;
+    font-size:3px;
+       }
+    .de2{
+        float:right;
+        margin-right:200px;
+        margin-top:5px; 
+        font-size:3px;}
+    /*div.dd2{display:inline-block; }*/
+    .dd2{ width:100%;
+          height:100px;
+          background-image:url(C:/Users/aa136/Desktop/logo.gif);
+          background-size: 40px 45px;
+          background-position: 200px 20px;
+          background-repeat:no-repeat ;  }
+    
+    
+    p.de3{
+        float: left;
+        margin-left:260px; 
+        font-size:25px; 
+        font-weight:bold; 
+        color:rgb(121, 121, 245);
+        padding-right:10px;
+        white-space: pre;
+        
+         }
+    
+    span.de4{
+        float: left;
+        clear:left;
+        font-family:serif;
+        font-size:6px;
+        font-weight: bold;
+        border-top:2px solid rgb(32, 28, 28); 
+        color:black;  
+    }
+    .de5{ height:70px;
+        float:left;
+        margin-top:10px;
+        padding-left: 10px; 
+        font-size:8px;
+        border-left:2px solid rgb(216, 212, 212);  
+    }
+    .dd3{
+        float:right;
+        margin-top:30px; 
+        margin-right:100px;
+        font-weight:bold;
+        font-size:20px; 
+        color: red; 
+        white-space: pre;
+    }
+    .dd4{
+        width:100%;
+        height:30px;
+        background-color: orange;
+        font-family:"Microsoft YaHei";
+    }
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;
+    margin-left: 200px; 
+    
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color:black; 
+    padding: 4px 40px;
+    text-decoration: none;
+}
+
+.quiet:hover {
+    background-color:rgb(119, 96, 96) ;
+    color:white;
+    cursor: pointer; 
+}
+.active{
+    background-color:green ;
+}
+
+#container { 
+    width: 1350px;     /*这里600x400是图片的宽高*/
+    height: 400px; 
+    
+    overflow: hidden;   /*隐藏溢出的图片，因为图片左浮动，总宽度为4200*/
+    position: relative;
+}
+#list { 
+    width: 6750px;   /*这里设置7张图片总宽度*/
+    height: 400px; 
+    position: absolute;  /*基于父容器container进行定位*/
+    z-index: 1;
+}
+#list img { 
+    float: left;
+}
+#buttons { 
+    position: absolute; 
+    height: 10px; 
+    width: 100px; 
+    z-index: 2;   /*按钮在图片的上面*/
+    bottom: 20px; 
+    left: 650px;
+}
+#buttons span { 
+    cursor: pointer; 
+    float: left; 
+    border: 1px solid #fff; 
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    background: #333; 
+    margin-right: 5px;
+}
+#buttons .on {  
+    background: orangered;   /*选中的按钮样式*/
+}
+.arrow { 
+    cursor: pointer; 
+    display: none;    /*左右切换按钮默认先隐藏*/
+    line-height: 39px; 
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: bold; 
+    width: 40px; 
+    height: 40px;  
+    position: absolute; 
+    z-index: 2; 
+    top: 180px; 
+    background-color: RGBA(0,0,0,.3); 
+    color: #fff;
+}
+.arrow:hover { 
+    background-color: RGBA(0,0,0,.7);
+}
+#container:hover .arrow { 
+    display: block;   /*当鼠标放上去容器上面就显示左右切换按钮*/
+}
+#prev { 
+    left: 20px;
+}
+#next { 
+    right: 20px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="dd1">
+      <span class="de1">回到首页 关注微信</span>
+      <span class="de2">apple,你好</span>
+    </div>
+    <div class="dd2" >
+    <p class="de3">  维 生 数 <br><span class="de4">COMPUTE-STUDIO-VTMER</span></p>
+    <div class="de5"><p>广工知名工作室品牌</p>
+    <p>广工计算机行业最具影响力的行业之一</p></div>
+    
+    <div class="dd3"><img src="C:/Users/aa136/Desktop/telphone.gif" width:"25px" height="25px">  <span>400-0399-386</span></div>
+    </div>
+    <div class="dd4">
+            <ul>
+                <li><a  class="quiet" href="#home">首页</a></li>
+                <li><a  class="active" href="#serve">服务套餐</a></li>
+                <li><a  class="quiet" href="#tip">行业方案</a></li>
+                <li><a  class="quiet" href="#about">培训中心</a></li>
+                <li><a   class="quiet" herf="#team">团队风采</a></li>
+                <li><a  class="quiet"herf="#us">关于我们</a></li>
+                <li><a  class="quiet" herf="#memerber">会员中心</a></li>
+              </ul> 
+        </div>
+    <div id="container">
+            <div id="list" style="left: -1350px;">
+                <img src="C:/Users/aa136/Pictures/Saved PicturesIMG_1953.jpg" alt="1"/>
+                <img src="C:/Users/aa136/Desktop/banner1.jpg" alt="1"/>
+                <img src="C:/Users/aa136/Pictures/Saved PicturesIMG_1918.jpg" alt="2"/>
+                <img src="C:/Users/aa136/Pictures/Saved PicturesIMG_1953.jpg" alt="3"/>
+                <img src="C:/Users/aa136/Desktop/banner1.jpg" alt="3"/>
+                
+            </div>
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+                
+            </div>
+            <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:;" id="next" class="arrow">&gt;</a>
+        </div>
+
+
+
+
+    <script>
+            window.onload = function () {
+        var container = document.getElementById('container');
+        var list = document.getElementById('list');
+        var buttons = document.getElementById('buttons').getElementsByTagName('span');
+        var prev = document.getElementById('prev');
+        var next = document.getElementById('next');
+        var index = 1;    //用于索引当前按钮
+        var len = 3;      //图片的数量
+        var animated = false;   //用于判断切换是否进行
+        var interval = 2500;    //自动播放定时器秒数，这里是3秒
+        var timer;             //定时器
+         function animate (offset) {
+            animated = true;     //切换进行中
+            var time = 300;     //位移总时间
+            var inteval = 10;   //位移间隔时间
+            var speed = offset/(time/inteval);   //每次位移量
+            var left = parseInt(list.style.left) + offset; //目标值
+    
+            var go = function (){
+                //这两种情况表示还在切换中
+             if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
+                    list.style.left = parseInt(list.style.left) + speed + 'px';
+                    setTimeout(go, inteval); //继续执行切换go()函数
+                }
+                else {
+                    list.style.left = left + 'px';
+                    if(left>-1350){
+                        list.style.left = -1350 * len + 'px';
+                    }
+                    if(left<(-1350 * len)) {
+                        list.style.left = '-1350px';
+                    }
+                    animated = false; //切换完成
+                }
+            }
+            go();
+        }
+        //用于为按钮添加样式
+        function showButton() {
+            //先找出原来有.on类的按钮，并移除其类
+            for (var i = 0; i < buttons.length ; i++) {
+                if( buttons[i].className == 'on'){
+                    buttons[i].className = '';
+                    break;
+                }
+            }
+            //为当前按钮添加类
+            buttons[index - 1].className = 'on';
+        }
+         //自动播放
+        function play() {
+            timer = setTimeout(function () {
+                next.onclick();
+                play();
+            }, interval);
+        }
+         //清除定时器
+        function stop() {
+            clearTimeout(timer);
+        }
+        //右点击
+        next.onclick = function () {
+            if (animated) {    //如果切换还在进行，则直接结束，直到切换完成
+                return;
+            }
+            if (index == 3) {
+                index = 1; 
+            }
+            else {
+                index += 1;
+            }
+            animate(-1350);
+            showButton();
+        }
+        //左点击
+        prev.onclick = function () {
+            if (animated) {       //如果切换还在进行，则直接结束，直到切换完成
+                return;
+            }
+            if (index == 1) {
+                index = 3;
+            }
+            else {
+                index -= 1;
+            }
+            animate(1350);
+            showButton();
+        }
+    
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].onclick = function () {
+                if (animated) {         //如果切换还在进行，则直接结束，直到切换完成
+                    return;
+                }
+                if(this.className == 'on') {     //如果点击的按钮是当前的按钮，不切换，结束
+                    return;
+                }
+                //获取按钮的自定义属性index，用于得到索引值
+                var myIndex = parseInt(this.getAttribute('index'));
+                var offset = -1350 * (myIndex - index);   //计算总的位移量
+    
+                animate(offset);
+                index = myIndex;   //将新的索引值赋值index
+                showButton();
+            }
+        }
+    
+        container.onmouseover = stop;//父容器的移入移出事件
+        container.onmouseout = play;
+    
+        play(); } //调用自动播放函数
+    
+            </script>
+
+
+
+    
+  </body>
+</html>
