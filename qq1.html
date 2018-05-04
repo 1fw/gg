@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>简单登陆页面</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <head>
+            
+            <link rel="stylesheet" href="main.css">
+        </head>
+        
+  <body>
+    <div class="head">
+            <span class="head1">回到首页 关注微信</span>
+            <a href="javascript:openLogin();" class="de2">登录 注册<a>
+    </div>
+    <div class="head2" >
+            <p class="head3">  维 生 数 <br><span class="head4">COMPUTE-STUDIO-VTMER</span></p>
+            <div class="head5">
+                <p>广工知名工作室品牌</p>
+                <p>广工计算机行业最具影响力的行业之一</p>
+            </div>
+    
+            <div class="head6">
+                <img src="C:/Users/aa136/Desktop/telphone.gif" width:"25px" height="25px">   <span>400-0399-386</span>
+            </div>
+    </div>
+<!--             导航条 -->
+    <div class="navigation">                           
+            <ul>
+                <li><a  class="quiet" href="#home">首页</a></li>
+                <li><a  class="quiet" href="#serve">服务套餐</a></li>
+                <li><a  class="quiet" href="#tip">行业方案</a></li>
+                <li><a  class="quiet" href="#about">培训中心</a></li>
+                <li><a   class="quiet" herf="#team">团队风采</a></li>
+                <li><a  class="quiet"herf="#us">关于我们</a></li>
+                <li><a  class="quiet" herf="#memerber">会员中心</a></li>
+              </ul>
+        </div>
+        <!-- 轮播图 -->
+    <div id="lunbotu">
+        <!-- 把第一张图片设置在-1366px的位置 -->
+            <div id="list" style="left: -1366px;">
+                <img src="C:/Users/aa136/Pictures/Saved PicturesIMG_1953.jpg" alt="1"/>
+                <img src="C:/Users/aa136/Desktop/banner1.jpg" alt="1"/>
+                <img src="C:/Users/aa136/Pictures/Saved PicturesIMG_1918.jpg" alt="2"/>
+                <img src="C:/Users/aa136/Pictures/Saved PicturesIMG_1953.jpg" alt="3"/>
+                <img src="C:/Users/aa136/Desktop/banner1.jpg" alt="3"/>
+                
+            </div>
+            <!-- 三个小按钮 -->
+            <div id="buttons">
+                <span index="1" class="on"></span>
+                <span index="2"></span>
+                <span index="3"></span>
+                
+            </div>
+            <!-- 前后按钮 -->
+            <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:;" id="next" class="arrow">&gt;</a>
+    </div>
+    <!-- 登录框及其整个的样式 -->
+    <div id=win style="display:none; POSITION:absolute; left:50%; top:50%; z-index:999 ;  width:600px; height:400px; margin-left:-300px; margin-top:-200px; border-radius: 10px; border:1px solid #2eb66d; background-color:#162636"; text-align:center;border-radius: 10px;">
+        <!-- 这里的空格字符是起作用的 -->
+            <div class="top">Hello!     欢迎光临                                          <a href="javascript:closeLogin();"><img src="C:/Users/aa136/Desktop/close 副本.gif" class="cancel" style="width:16px;height:16px;"  alt=""></a>
+            </div>
+            <form name="frm" action="0.html" method="post">
+                <table cellspacing="20" >
+                    <tr align=center>
+                        <td><input type="text" name="username"  id="username" placeholder="用户名" style="height:35px;line-height:35px;border-radius:5px;width:300px;left:60%;position:relative; margin-bottom:20px; margin-top:40px; padding-left: 10px;">
+                        </td> 
+                    </tr>
+                    <tr align=center>
+                        <td><input type="password" name="password" id="password" placeholder="密码" style="height:35px;line-height:35px;border-radius:5px;width:300px; left:60%;position:relative; padding-left: 10px;">
+                        </td>
+                    </tr>
+                    <tr align=center>
+                        <td colspan="2">
+                            <input type="button"style="background-color:#fea717;margin-left:0px;" value="登 录" onclick="r()"/>   
+                            <input type="reset" style="background-color:#fea717; margin-left:130px;" value="重 置"/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </div>
+    <!-- 服务项目 -->
+    <div class="item">
+            <div class="item1">ITEM
+            </div>
+            <div class="item2">
+                <p class="item3">服务项目</p>
+                <p>微信 微商城 自媒体 品牌推广有门道！</p>
+            </div>
+            <div class="table">
+                <table cellspacing="10">
+                    <tr>
+                        <td id="itemChild"></td>
+                        <td class="rotate2"id="itemChild"><img src="C:/Users/aa136/Desktop/免费开微.gif" style="width:30px; height:30px;position:absolute;left:5px;top:5px;"></td>
+                        <td class="translate"id="itemChild"><img src="C:/Users/aa136/Desktop/SEO.gif" style="width:30px; height:30px; position:absolute;left:5px;top:5px; "></td>
+                    </tr>
+                    <tr>
+                        <td id="itemChild"><img src="C:/Users/aa136/Desktop/培训.gif" style="width:30px; height:30px;"></td>
+                        <td id="itemChild"><img src="C:/Users/aa136/Desktop/推广.gif" style="width:30px; height:30px;"></td>
+                        <td class="rotate1" id="itemChild"></td>
+                    </tr>
+                    <tr>
+                        <td id="itemChild"></td>
+                        <td id="itemChild"><img src="C:/Users/aa136/Desktop/公众号.gif" style="width:30px; height:30px;"></td>
+                        <td id="itemChild"><img src="C:/Users/aa136/Desktop/设计策划.gif" style="width:30px; height:30px;" ></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="serveProject">服务项目</div>
+            <div class="square1"></div>
+            <div class="square2"></div>
+            <div class="circle"></div>
+            <div class="hu1">
+                <img src="C:/Users/aa136/Desktop/微营销培训.gif">
+            </div> 
+            <div class="hu2">
+                <img src="C:/Users/aa136/Desktop/1.2.gif">
+            </div> 
+            <div class="hu3">
+                <img src="C:/Users/aa136/Desktop/1.3.gif">
+            </div> 
+            <div class="hu4">
+                <img src="C:/Users/aa136/Desktop/1.4.gif">
+            </div> 
+            <div class="select">                             
+                <div class="select1"></div>
+                <div class="select1"></div>
+                <div class="select1"></div>
+                <div class="select1"></div>
+                <div class="select1"></div>
+                <div class="select1"></div>
+                <div class="select1"></div>
+                <div class="select1"></div>
+                <div class="select1"></div>
+                <div class="select1"></div> 
+            </div>
+            <div class="selectWord">
+                <div>微营销培训</div>
+                <div>公众号搭建</div>
+                <div>文案策划</div>
+                <div>微商城装修</div>
+                <div>品牌推广</div>
+                <div>自媒体推广</div>
+                <div>seo优化</div>
+                <div>付费推广央视广告</div>
+                <div>诚信授牌</div>
+                <div>舆情检测</div>
+            </div>
+            <div class="knowAbout">了解详情</div>
+            </div>
+            <!-- 平台搭建 -->
+    <div class="platform">
+            <div class="build1">BUILD</div>
+            <div class="build2">
+                <p class="build3">平台搭建</p>
+                <p class="build4">借助多平台曝光品牌，获取更多的粉丝！</p>
+            </div>
+    </div>
+            <div class="th1" >微信公众号搭建 庞大功能体系提升用户体验</div>
+            <div class="we3">
+                <table  cellspacing="10">
+                    <tr>
+                        <td class="t1"><p class="photoName">微信认证</p></td>
+                        <td class="t2"><p class="photoName">功能配置</p></td>
+                        <td class="t3"><p class="photoName">自定义菜单</p></td>
+                        <td class="t4"><p class="photoName">关键词回复</p></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="th2">微商城搭建与装修 高大上页面圈住精准粉丝</div>
+            <div class="we4">
+                <table cellspacing="10">
+                     <tr>
+                         <td class="t5"><p class="photoName">专题页面设计</p></td>
+                         <td class="t6"><p class="photoName">店铺装修</p></td>
+                         <td class="t7"><p class="photoName">详情页制作</p></td>
+                         <td class="t8"><p class="photoName">页面整改</p></td>
+                    </tr>
+                </table>
+            </div>
+            <!-- 全网营销 -->
+    <div class="market">
+        <div class="market1">MARKET</div>
+        <div class="market2">
+            <p class="market3">全网营销</p>
+            <p class="market4">多渠道推广、精准投放、一网打尽！</p>
+        </div>
+        <div class="market5">文案策划</div>
+        <div class="box1">
+            <div class="d1">
+                <div class="img"> <img src="C:/Users/aa136/Desktop/文案撰写.gif" style="width:60px;height:60px;">
+                </div>
+            </div>
+            <div class="d1"></div>
+            <div class="d1">
+                <div class="img"> <img src="C:/Users/aa136/Desktop/图文设计.gif" style="width:60px;height:60px;">
+                </div>
+            </div>
+            <div class="d1"></div>
+            <div class="d1">
+                <div class="img"> <img src="C:/Users/aa136/Desktop/活动策划.gif" style="width:60px;height:60px;">
+                </div>
+            </div>
+        </div>
+            <div class="word1">文案撰写</div>
+            <div class="word2">图文设计</div>
+            <div class="word3">活动策划</div>
+    </div>
+    <!-- 网站优化 -->
+    <div class="website">
+            <div class="website1">网站优化</div>                                                       
+            <div class="photo">
+                <div class="photo1">
+                    <img src="C:/Users/aa136/Desktop/SEO.jpg">
+                        <div class="leftbottom"><span class="hoverWord">SEO</span>——品牌词优化，让网站排名更靠前</div>
+                </div>
+                <div class="photo2">
+                    <img src="C:/Users/aa136/Desktop/SWO.jpg">
+                        <div class="leftbottom"><span class="hoverWord">SWO</span>——精准投放广告，获取精准目标用户</div>
+                </div>
+            </div>
+    </div>
+    <div class="container7">
+        <div class="extendName">品牌推广</div>
+        <!-- 品牌推广这里的三张图片用table解决 -->
+        <table cellspacing="15" class="extend">
+            <tr> 
+                <td class="extendPhoto1">
+                    <div class="extendTitle">央视广告</div>
+                    <div class="extendPhotoContainer1"><p class="extendWord">在央视播放广告，借助央<br>视的宣传品牌，增加品牌<br>的公信力</p></div>
+                </td>
+                <td class="extendPhoto2">
+                    <div class="extendTitle">腾讯社交网络</div>
+                    <div class="extendPhotoContainer2"><p class="extendWord">QQ音乐、空间、对话框等腾<br>讯平台的图文广告，覆盖<br>面广</p></div>
+                </td>
+                <td class="extendPhoto3">
+                    <div class="extendTitle">朋友圈定投</div>
+                    <div class="extendPhotoContainer3"><p class="extendWord">精准投放，覆盖面广，<br>朋友圈活跃度高           <br>   </p></div>
+                </td> 
+            </tr>
+        </table>
+    </div>
+    <!-- 特色服务 -->
+    <div class="FEATURE">
+            <div class="FEATURE1">FEATURE</div>
+            <div class="FEATURE2">
+                <p class="FEATURE3">特色服务</p>
+                <p>树立企业正面形象，边学习边实战！</p></div>
+            <div class="FEATURE4">
+                <table cellspacing="15">
+                    <tr>
+                        <td class="FeaturePhoto1">
+                            <div  class="dec">品牌维护</div>
+                            <div class="FeaturePhotoWord">树立企业正面形象</div>
+                        </td>
+                        <td class="FeaturePhoto2">
+                            <div class="dec">诚信授牌</div>
+                            <div class="FeaturePhotoWord">授企业诚信牌，提高品牌</div>
+                            <div class="FeaturePhotoWord">诚信度和美誉度</div></td>
+                        <td class="FeaturePhoto3">
+                            <div class="dec">舆情检测</div>
+                            <div class="FeaturePhotoWord">1.协助企业投放新闻</div>
+                            <div class="FeaturePhotoWord">2.制定压制负面方案</div>
+                        </td>
+                        <td class="FeaturePhotoRight">
+                            <h>微营销王牌课程培训</h>
+                            <P class="aa">1.学习最实战的企业微营销课程，提高业绩。</P>
+                            <P class="aa">2.线上线下同步培训，全年跟进辅导。</P>
+                            <p class="aa">3.循环式滚动开课，一年内免费复训。</p>
+                            <p class="aa">4.行业资深讲师“3+7”授课法，学习更高效。</p>
+                            <FeatureBottom>立即报名</FeatureBottom>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+    <!-- 服务优势 -->
+    <div class="merit"> 
+        <div class="meritHead1">MERIT</div>
+        <div class="meritHead2">
+            <p class="meritHead3">服务优势</p>
+            <p class="meritHead4">用最小的成本，为用户创造最大的优势！</p>
+        </div>
+    </div>
+    <!-- 优势1 -->
+    <div class="merit1">
+        <div class="a1">
+            <div>服务内容丰富</div>
+            <div class="a2">元典服务内容丰富，包括公众号搭建，微商城<br>
+            装修、文案策划、品牌推广、seo优化、企业<br>
+            王牌课程培训等，全方位、高价值，让企业如<br>虎添翼。<br> 
+            </div>
+        </div>
+            <div class="a4"><img src="C:/Users/aa136/Desktop/1.gif"></div>
+            <div class="a3"><img src="C:/Users/aa136/Desktop/优势1.gif"></div>
+    </div>
+    <div class="white"></div>
+    <!-- 优势2 -->
+    <div class="merit2">
+        <div class="b1"><img src="C:/Users/aa136/Desktop/2.gif"></div>
+        <div class="b2"><img src="C:/Users/aa136/Desktop/优势2.gif"></div>
+        <div class="b3">
+            <p class="b4">定制四大套餐</p>
+            <p class="b5">元典根据企业产品的特征，行业的属<br>
+            性特别定制四大微营销服务套餐，总<br>
+            有一款属于你。</p>
+        </div>
+    </div>
+    <div class="white"></div>
+    <!-- 优势3 -->
+    <div class="merit3">
+        <div class="c1">
+            <p class="c2">汇集微营销精英团队</p>
+            <P class="c3">元典公司有近300百人培训服务团队，岗位包含文案<br>
+            策划、推广专员、美工设计、技术开发、粉丝维护<br>
+            采用多对一服务模式，更高效的服务企业。</P>
+        </div>
+        <div class="c4"><img src="C:/Users/aa136/Desktop/3.gif"></div>
+        <div class="c5"><img src="C:/Users/aa136/Desktop/优势3.gif"></div>
+    </div>
+    <div class="white"></div>
+    <!-- 优势4 -->
+    <div class="merit4">
+        <div class="e1"><img src="C:/Users/aa136/Desktop/4.gif"></div>
+        <div class="e2"><img src="C:/Users/aa136/Desktop/优势4.gif"></div>
+        <div class="b3">
+            <p class="b4">量身定制运营方案</p>
+            <p class="b5">每个企业的规模和发展都不相同，元典公司从<br>
+             企业所属行业、产品出发，为每一个企业量身定<br>
+            制营销、运营、推广、策划方案。</p></div></div>   
+        </div>
+        <!-- 企业案例 -->
+    <div class="case">
+        <div class="case1">CASE</div>
+        <div class="case2">
+            <p class="case3">企业案例</p>
+            <p>他们的选择证明了我们的态度能力</p>
+        </div>
+        <div class="anLi1">                       <!--企业案例中的第一行 -->
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="d"></div>
+        </div>
+        <div class="anLi2">                        <!--企业案例中的第二行 --> 
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="d"></div>
+            <div class="d"></div>
+        </div>
+    </div>
+    <!-- 服务套餐 -->
+    <div class="menu">
+            <div class="menu1">MENU</div>
+            <div class="menu2">
+                <p class="menu3">服务套餐</p>
+                <p>四大套餐，总有一款适合你</p></div>
+            <div class="cafe">微营销创业套餐</div>
+            <div class="tab">
+                <table>
+                    <tr class="head">
+                        <td class="col1">项目</td>
+                        <td class="col2">内容详情</td>
+                        <td class="col3">预期效果</td>
+                    </tr>
+                    <tr>
+                        <td class="col4">
+                                <div class="colSquare"></div>      <!--前面1的小方框-->
+                                <div class="colChild">公众号搭建</div>  
+                        </td>
+                        <td class="col5">开通并搭建微信公众运营平台，免费验证</td>
+                        <td class="col6">可使用公众号进行品牌宣传和产品销售</td>
+                    </tr>
+                    <tr>
+                            <td class="col4">
+                                    <div class="colSquare"></div>
+                                    <div class="colChild">微商城装修</div></td>
+                            <td class="col5">使用微商城进行产品销售</td>
+                            <td class="col6">通过微商城获取客户提成销售额</td>
+                        </tr>
+                        <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">文案策划</div></td>
+                                <td class="col5">持续对公众号进行内容营销和策划</td>
+                                <td class="col6">通过公众号获取粉丝用户</td>
+                         </tr>
+                         <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">品牌推广</div></td>
+                                <td class="col5">面向全网对品牌进行布局，并实施内容发布与推广</td>
+                                <td class="col6">利用在各大平台和载体的全网布局，曝光品牌吸引粉丝</td>
+                         </tr>
+                         <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">微营销王牌课程</div></td>
+                                <td class="col5">企业学习如何做好微营销</td>
+                                <td class="col6">掌握企业微营销课程并执行，提高业绩</td>
+                         </tr>
+                         <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">全网付费业务代理</div></td>
+                                <td class="col5">代办各类付费渠道的开户业务和前期账户搭建</td>
+                                <td class="col6">用专业的能力帮助企业在付费推广平台上迈出平稳的一步</td>
+                         </tr>
+                         <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">自媒体推广</div></td>
+                                <td class="col5">提高品牌曝光度与品牌美誉度，被更多用户关注</td>
+                                <td class="col6">吸引网民关注品牌，增加粉丝量和曝光</td>
+                         </tr>
+                         <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">诚信授牌</div></td>
+                                <td class="col5">授予国家部委级协会认证的诚信示范牌匾</td>
+                                <td class="col6">提高品牌诚信度和美誉度</td>
+                         </tr> 
+                         <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">舆情监测</div></td>
+                                <td class="col5">时刻关注品牌舆情走向，提前把控市场方向</td>
+                                <td class="col6">做好品牌推广和布控，危机预警</td>
+                         </tr>
+                         <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">SEO优化</div></td>
+                                <td class="col5">让品牌和内容营销更容易被引擎收录和抓取</td>
+                                <td class="col6">提升搜索引擎抓取品牌几率和排名更靠前</td>
+                         </tr>
+                         <tr>
+                                <td class="col4">
+                                        <div class="colSquare"></div>
+                                        <div class="colChild">央视广告</div></td>
+                                <td class="col5">登录央视电视广告</td>
+                                <td class="col6">与央视品牌捆绑，并增加品牌公信力</td>
+                         </tr>
+                         <tr>
+                            <td class="col7"></td>
+                            <td class="col8"></td>
+                            <td class="col9"></td> 
+                        </tr>  
+                </table>
+            </div>
+            <div class="tip">
+               了解详情
+            </div>
+    </div>
+    <!-- 最后的一部分 -->
+    <div class="foot">
+            <div class="footChild1">
+             <div class="footChild2"> 维生数<br>专业学生技术服务平台</div>
+             <p class="footChild3">快速登录</p>
+             <form  class="form">
+                 <span class="name">用户名</span><input type="text" name="用户名" style="width:150px;"><br>
+                 <span class="password">密   码</span><input type="password" name="密码" style="width:150px;">
+             </form>
+             <bottom class="join-in">登录</bottom>
+             <bottom class="join-up">注册</bottom>       
+             </div> 
+             <div class="ab"></div>
+             <div class="map">
+                    <div class="map1">网站地图</div>
+                    <div>首页 Home    ></div>
+                    <div>服务套餐 Service    ></div>
+                    <div>行业方案 Cace   ></div>
+                    <div>培训中心 Trainning    ></div>
+                    <div>团队风采 Teacher    ></div>
+                    <div>关于我们 About    ></div>
+                    <div>会员中心 Menu    ></div>
+                    </div>
+              <div class="bb"></div>
+              <div class="about">
+                  <div class="about1">关注我们</div>
+                  <div> <img src="C:/Users/aa136/Desktop/二维码.jpg" style="width:80px;height:80px;" ></div>
+              </div>
+             <div class="public">
+                 <div class="public1">维生数公众号：</div>
+                 <div>微信号：<span class="public2">vtmers</span></div>
+                 <div>微信在线服务咨询</div>
+                 <div>获取最新工作室信息</div>
+                 <div>免费资源，资料分享等等</div> 
+             </div>
+             <div class="cc"></div>
+             <div class="contact">
+                 <div class="contact1">联系我们</div>
+                 <div class="qq"><img src="C:/Users/aa136/Desktop/服务热线.gif"></div>
+                 <div class="qq"><img src="C:/Users/aa136/Desktop/QQ.gif"><div>
+                 <div class="time"><img src="C:/Users/aa136/Desktop/时间.gif"></div>
+                 <div class="contact2"><p>服务热线<br>400-039-9836</p></div>
+                 <div class="contact3"><p>QQ在线咨询：<br><span class="QQ1">2881578474</span> <bottom class="QQ2">点击咨询</bottom></p></div>
+                 <div class="contact4"><P>服务时间<br><span class="QQ1">周一~周六8:30-18:00</span></P></div>
+                 <div class="footer">
+                        <div>版权所有维生数学生工作室团队</div>
+                        <div>粤ICP00000000号-0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="white"></div>
+            <script>
+                    window.onload = function () {
+                        var container = document.getElementById('lunbotu');
+                        var list = document.getElementById('list');
+                        var buttons = document.getElementById('buttons').getElementsByTagName('span');
+                        var prev = document.getElementById('prev');
+                        var next = document.getElementById('next');
+                        var index = 1;    //用于索引当前按钮
+                        var len = 3;      //图片的数量
+                        var animated = false;   //用于判断切换是否进行
+                        var interval = 2500;    //自动播放定时器秒数，这里是3秒
+                        var timer;             //定时器
+                         function animate (offset) {
+                            animated = true;     //切换进行中
+                            var time = 300;     //位移总时间
+                            var inteval = 10;   //位移间隔时间
+                            var speed = offset/(time/inteval);   //每次位移量
+                            var left = parseInt(list.style.left) + offset; //目标值
+                    
+                            var go = function (){
+                                //这两种情况表示还在切换中
+                             if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
+                                    list.style.left = parseInt(list.style.left) + speed + 'px';
+                                    setTimeout(go, inteval); //继续执行切换go()函数
+                                }
+                                else {
+                                    list.style.left = left + 'px';
+                                    if(left>-1380){
+                                        list.style.left = -1380 * len + 'px';
+                                    }
+                                    if(left<(-1380 * len)) {
+                                        list.style.left = '-1380px';
+                                    }
+                                    animated = false; //切换完成
+                                }
+                            }
+                            go();
+                        }
+                        //用于为按钮添加样式
+                        function showButton() {
+                            //先找出原来有.on类的按钮，并移除其类
+                            for (var i = 0; i < buttons.length ; i++) {
+                                if( buttons[i].className == 'on'){
+                                    buttons[i].className = '';
+                                    break;
+                                }
+                            }
+                            //为当前按钮添加类
+                            buttons[index - 1].className = 'on';
+                        }
+                         //自动播放
+                        function play() {
+                            timer = setTimeout(function () {
+                                next.onclick();
+                                play();
+                            }, interval);
+                        }
+                         //清除定时器
+                        function stop() {
+                            clearTimeout(timer);
+                        }
+                        //右点击
+                        next.onclick = function () {
+                            if (animated) {    //如果切换还在进行，则直接结束，直到切换完成
+                                return;
+                            }
+                            if (index == 3) {
+                                index = 1; 
+                            }
+                            else {
+                                index += 1;
+                            }
+                            animate(-1380);
+                            showButton();
+                        }
+                        //左点击
+                        prev.onclick = function () {
+                            if (animated) {       //如果切换还在进行，则直接结束，直到切换完成
+                                return;
+                            }
+                            if (index == 1) {
+                                index = 3;
+                            }
+                            else {
+                                index -= 1;
+                            }
+                            animate(1380);
+                            showButton();
+                        }
+                    
+                        for (var i = 0; i < buttons.length; i++) {
+                            buttons[i].onclick = function () {
+                                if (animated) {         //如果切换还在进行，则直接结束，直到切换完成
+                                    return;
+                                }
+                                if(this.className == 'on') {     //如果点击的按钮是当前的按钮，不切换，结束
+                                    return;
+                                }
+                                //获取按钮的自定义属性index，用于得到索引值
+                                var myIndex = parseInt(this.getAttribute('index'));
+                                var offset = -1350 * (myIndex - index);   //计算总的位移量
+                    
+                                animate(offset);
+                                index = myIndex;   //将新的索引值赋值index
+                                showButton();
+                            }
+                        }
+                    
+                        container.onmouseover = stop;//父容器的移入移出事件
+                        container.onmouseout = play;
+                    
+                        play(); } //调用自动播放函数
+                        
+                        function openLogin(){
+                            document.getElementById("win").style.display="";
+                         }
+                         function closeLogin(){
+                            document.getElementById("win").style.display="none";
+                         }
+                         function r()
+                         {
+                         var username=document.getElementById("username");
+                         var pass=document.getElementById("password");
+                         if(username.value=="")
+                         {
+                         alert("请输入用户名");
+                         username.focus();
+                         return ;
+                         }
+                               else  if(pass.value=="")
+                         {
+                         alert("请输入密码");
+                         return;
+                         }
+                                else  if((pass.value=="123456")&&(username.value=="Soul"))
+                         {
+                             frm.submit();
+                         }
+                               else
+                                  {
+                                     alert("登录失败，请检查用户名和密码是否有误！");
+                                      return;
+                                   }
+                         return true;
+                         }
+                         $(document).click(function (e) {
+                             var drag = $("#win"),
+                                 dragel = $("#win")[0],
+                                 target = e.target;
+                             if (dragel !== target && !$.contains(dragel, target)) {
+                                 drag.hide();
+                             }
+                         });
+                         var oDiv = document.getElementsByClassName('colSquare');
+                         var pDiv = document.getElementsByClassName('colChild');
+                         var qDiv = document.getElementsByClassName('col5');
+                         var rDiv = document.getElementsByClassName('col6');
+                     
+                         for(let i=0;i<oDiv.length;i++){
+                             oDiv[i].onclick=function(){
+                                 var divClass1 = oDiv[i].className;
+                                 var divClass2 = pDiv[i].className;
+                                 var divClass3 = qDiv[i].className;
+                                 var divClass4 = rDiv[i].className;
+                     
+                                 oDiv[i].className= divClass1=='colSquare change' ? 'colSquare' : 'colSquare change';//等同于下面的 if...else
+                     //          if(divClass=='colSquare red'){
+                     //             oDiv.className='colSquare';
+                     //          }else{
+                     //             oDiv.className='colSquare red'
+                     //          }
+                                 pDiv[i].className= divClass2=='colChild red' ? 'colChild' : 'colChild red';
+                                 qDiv[i].className= divClass3=='col5 red' ? 'col5' : 'col5 red';
+                                 rDiv[i].className= divClass4=='col6 red' ? 'col6' : 'col6 red';
+                     
+                     
+                             }
+                         }
+                         var uDive = document.getElementsByClassName('select1');
+                         for(let i=0;i<uDive.length;i++){
+                                      uDive[i].onclick=function(){
+                                 var divClass = uDive[i].className;
+                                uDive[i].className= divClass=='select1 yellow' ? 'select1' : 'select1 yellow';//等同于下面的 if...else
+                    //				if(divClass=='select1 red'){
+                    //					uDiv.className='select1';
+                    //				}else{
+                    //					uDiv.className='select1 red'
+                    //				}
+                             };
+                         }
+                             
+                    //          function left(){
+                    //	      		 var oDiv = document.getElementById('select1');
+                    //				oDiv.style.backgroundImage=url(C/Users/aa136/Desktop/单.gif);                        //通过js改变这个div的left值
+                    //			} 
+                         //四大套餐 C:\Users\aa136\Desktop\we.vscode\index.js
+                            
+                      
+                
+            </script>
+             
+</body>
+</html>
