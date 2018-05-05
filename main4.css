@@ -1,0 +1,1346 @@
+body{
+    width:100%;
+    margin:0px;
+    padding:0px;
+    font-family:Microsoft YaHei;   
+}
+.head{
+        width:100%;
+        height:25px;
+        background-color:#dfdfdf;
+        position:relative; 
+    }
+.head1{ margin-left:200px;
+        margin-top:5px; 
+        position:absolute;
+        float: left;
+        font-size:3px;
+    }
+.de2{
+        float:right;
+        margin-right:200px;
+        margin-top:5px; 
+        font-size:3px;
+    }
+.head2{ width:100%;
+        height:100px;
+        background-image:url(C:/Users/aa136/Desktop/logo.gif);
+        background-size: 40px 45px;
+        background-position: 200px 20px;
+        background-repeat:no-repeat ;  
+}
+p.head3{
+        float: left;
+        margin-left:260px; 
+        font-size:25px; 
+        font-weight:bold; 
+        color:#4385e8;
+        padding-right:10px;
+        white-space: pre;   /*空字符*/
+    }
+span.head4{
+        float: left;
+        clear:left;
+        font-family:serif;
+        font-size:6px;
+        font-weight: bold;
+        border-top:2px solid rgb(32, 28, 28); 
+        color:black;  
+    }
+.head5{ 
+        height:70px;
+        float:left;
+        margin-top:10px;
+        padding-left: 10px; 
+        font-size:8px;
+        border-left:2px solid rgb(216, 212, 212);  
+    }
+.head6{
+        float:right;
+        margin-top:30px; 
+        margin-right:100px;
+        font-weight:bold;
+        font-size:20px; 
+        color: red; 
+        white-space: pre;
+    }
+.navigation{
+        width:100%;
+        height:30px;
+        background-color: orange;
+        font-family:"Microsoft YaHei";
+        line-height:30px; 
+    }
+ul {
+        list-style-type: none;
+        overflow: hidden;
+        margin-left: 200px; 
+
+    }
+li {
+    float: left;
+    }
+li a {
+    display: block;
+    color:black; 
+    padding-left:40px;
+    padding-right:40px;  
+    text-decoration: none;
+    }
+.quiet:hover {
+                background-color:#0db05f;
+                color:white;
+                cursor: pointer; 
+    }
+#lunbotu { 
+            width: 1366px;     /*这里1366x400是图片的宽高*/
+            height: 400px; 
+            overflow: hidden;   /*隐藏溢出的图片，因为图片左浮动，总宽度为4200*/
+            position: relative;
+    }
+#list { 
+        width: 6830px;   /*这里设置5张图片总宽度*/
+        height: 400px; 
+        position: absolute;  /*基于父容器lunbotu进行定位*/
+        z-index: 1;
+    }
+#list img { 
+            float: left;
+        }
+#buttons {         /*按钮的样式*/
+            position: absolute; 
+            height: 10px; 
+            width: 100px; 
+            z-index: 2;    /*按钮在图片的上面*/
+            bottom: 20px; 
+            left: 650px;
+        }
+#buttons span { 
+            cursor: pointer; 
+            float: left; 
+            border: 1px solid #fff; 
+            width: 10px; 
+            height: 10px; 
+            border-radius: 50%; 
+            background: #333; 
+            margin-right: 5px;
+        }   
+#buttons .on {  
+                background: orangered;
+                cursor: pointer;   /*选中的按钮样式*/
+        }
+.arrow { 
+            cursor: pointer; 
+            display: none;    /*左右切换按钮默认先隐藏*/
+            line-height: 39px; 
+            text-align: center; 
+            font-size: 36px; 
+            font-weight: bold; 
+            width: 40px; 
+            height: 40px;  
+            position: absolute; 
+            z-index: 2; 
+            top: 180px; 
+            background-color: RGBA(0,0,0,.3); 
+            color: #fff;
+        }
+.arrow:hover { 
+                background-color: RGBA(0,0,0,.7);
+            }
+#lunbotu:hover .arrow { 
+                        display: block;   /*当鼠标放上去容器上面就显示左右切换按钮*/
+                    }
+#prev {     /*上一个*/
+        left: 20px;
+    }
+#next { 
+        right: 20px;
+    }
+.lunbo{
+        width:600px;
+        display:none;
+        height:280px;
+        border:1px solid #2eb66d;
+        border-radius: 10px;
+        margin: 200px auto;
+        background-color:#162636;
+        z-index:999 ; 
+    }
+        
+       
+.top{                           /*Hello Word这条黄条的样式*/
+        background-color:#fea717;
+        color:#ffffff;
+        padding-left:40%; 
+        white-space:pre;
+        height:40px;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px; 
+        line-height:40px;
+    }
+.s1{
+     background-color:#fea717;     /*登录*/
+     color:#ffffff;
+     font-size:15px;
+  }
+.s2{
+    background-color:#fea717;    /*重置*/
+    color:#ffffff;
+    font-size:15px;
+  }
+.item{              /*给ITEM这里定一个div并定其样式*/
+        height:870px;
+        background-color:#142434;
+        background-image:url(C:/Users/aa136/Desktop/弧形.gif);
+        background-repeat:no-repeat;
+        background-position:440px 230px;
+        position: relative;
+        width:100%;    
+    }
+.item1{                 /*ITEM的样式*/
+        font-size:30px;
+        float:left;
+        margin-left:500px;
+        margin-top:15px; 
+        padding-right:6px;
+        color:#f49800;
+        border-right:5px solid #f49800;
+        margin-bottom:4%;    
+    }
+.item2{                     /*服务项目的样式*/
+        float:left;
+        margin-top:7px;
+        margin-left:5px;  
+        line-height:2px;
+        font-size:13px;
+        color:#ffffff ;
+ 
+    } 
+.item3{
+        font-weight:bold;
+        font-size:20px;
+        color:#ffffff ;
+     }
+
+.table{                 /*给弧形里面的小方框定一个父元素并定位*/
+        position:absolute;
+        left:560px;
+        top:350px;
+    }
+#itemChild{            /*弧形里的小方框的样式*/
+            width:40px;
+            height:40px;
+            border-radius:5px;
+            background-color:#ffffff;
+            text-align:center;
+        }
+.rotate1{                           /*第二行第三个的小方框通过旋转得到*/
+            transform: rotate(30deg);
+            -ms-transform: rotate(30deg); /* IE 9 */
+            -webkit-transform: rotate(30deg); /* Safari and Chrome */
+       }
+.rotate2{
+            transform: rotate(330deg);      /*第一行第二个的小方框通过旋转得到*/
+            -ms-transform: rotate(330deg); /* IE 9 */
+            -webkit-transform: rotate(330deg); /* Safari and Chrome */
+       }
+.translate{
+            transform: translate(10px,-10px);      /*第一行第三个小方框通过平移得到*/
+            -ms-transform: translate(10px,-10px); /* IE 9 */
+            -webkit-transform: translate(10px,-10px); /* Safari and Chrome */
+        }
+.serveProject{                  /*服务项目*/
+                position:absolute;
+                left:600px;top:570px;
+                color:#f49800;
+                font-weight:bold;
+                font-size:25px;  
+            }
+.square1{                   /*黄色小方块1*/
+            width:100px;
+            height:70px;
+            background-color:#f49800;
+            border-radius:5px;
+            position:absolute;
+            left:600px;
+            top:630px;  
+        }
+.square2{                   /*黄色小方块2*/
+            width:60px;
+            height:20px;
+            background-color:#f49800;
+            border-radius:5px;
+            position:absolute;
+            left:620px;
+            top:705px;  
+        }
+.circle{                    /*绿色小圆仔*/
+            width:30px;
+            height:15px;
+            border-bottom-left-radius:30px;
+            border-bottom-right-radius:30px;
+            background-color: #2eb66d; 
+            position:absolute;
+            left:635px;
+            top:730px; 
+        }
+.hu1{                     /*弧形字最内的一行*/
+        position:absolute ;
+        left:405px;
+        top:200px;
+    }
+.hu2{                     /*弧形字内的二行*/          
+        position:absolute;
+        left:350px;
+        top:160px;
+    }
+.hu3{                      /*弧形字内第三行*/
+        position:absolute;
+        left:305px;
+        top:160px;
+  }
+.hu4{                      /*弧形字最外行*/
+        position:absolute;
+        left:530px;
+        top:120px;
+  }
+.select{            /*选项小方框的父元素*/
+        position:absolute;
+        left:1000px;
+        top:500px;
+        font-size:13px;
+        color:#ffffff ;
+     }
+.select1{              /*选项小方框*/
+            width:13px;
+            height:13px;
+            background-color:#ffffff;
+            margin-bottom:6px; 
+    }
+ .selectWord{        /*选项小方框旁的文字*/
+                font-size:12px;
+                color:#ffffff ;
+                position:absolute;
+                left:1019px;
+                top:498px;
+                line-height:19px;  
+          }
+.knowAbout{       /*了解详情*/
+                position:absolute;
+                left:1000px;
+                top:700px;
+                width:100px;
+                height:30px;
+                color:#ffffff;
+                text-align:center;
+                border-radius:5px;  
+                background-color:#f49800;
+                font-size:15px;
+                padding-top:6px;     
+            }
+.knowAbout:hover{       /*鼠标hover到了解详情后的样式*/
+                    background-color:#2eb66d;
+                    cursor: pointer;
+               }
+.platform{          /*平台搭建这里的head的父容器*/
+            height:100px;
+ 
+        }
+.build1{
+            font-size:30px;
+            float:left;
+            margin-left:530px;
+            margin-top: 15px;
+            padding-right:6px;
+            border-right:5px solid orange;   
+        }
+.build2{
+        float:left;
+        margin-top:7px;
+        margin-left:5px;  
+        line-height:2px; 
+        }
+.build3{
+        font-size: 20px;
+        font-weight:900px;
+    }
+.build4{
+            font-size: 13px;
+        }
+.th1{       /*第一行表格的title*/
+        text-align:center;                                                                       
+    }
+.we3{      
+        margin-left:100px; 
+        margin-bottom:40px; 
+}
+        /* 平台搭建这里的第一行的4个小方框用table完成 */
+        .t1{       
+                background-color:#52b2e3;
+                background-image:url(C:/Users/aa136/Desktop/认证.gif);
+                background-repeat: no-repeat;
+                background-position:90px 40px;
+                border-radius:10px;  
+                width:270px;
+                height:200px;
+                color:white;
+                text-align: center;
+            }
+        .t2{
+                background-color:#ab6491 ;
+                background-image:url(C:/Users/aa136/Desktop/配置.png);
+                background-repeat: no-repeat; 
+                background-position:90px 40px;
+                border-radius:10px;  
+                width:270px;
+                height:200px; 
+                color:white;
+                text-align: center;
+            }
+        .t3{
+                background-color: #82cf36;
+                background-image:url(C:/Users/aa136/Desktop/dd.gif);
+                background-repeat: no-repeat;
+                background-position:90px 40px;
+                border-radius:10px;  
+                width:270px;
+                height:200px; 
+                color:white;
+                text-align: center;
+        }
+        .t4{
+                background-color: #2bc0a7;
+                background-image:url(C:/Users/aa136/Desktop/关键词.gif);
+                background-repeat: no-repeat;
+                background-position:90px 40px;
+                border-radius:10px;   
+                width:270px;
+                height:200px;
+                color:white;
+                text-align: center; 
+            }
+.th2{       /*第二行表格的title*/
+        text-align: center;
+        margin-bottom: 30px;
+  }
+
+.we4{
+        margin-left:100px; 
+        margin-bottom:60px; 
+  }
+        /* 第二行的四个表格 */
+        .t5{
+                background-color: #49cb7e;
+                background-image:url(C:/Users/aa136/Desktop/专题.gif);
+                background-repeat: no-repeat;
+                background-position:90px 40px;
+                border-radius:10px;   
+                width:270px;
+                height:200px;
+                color:white;
+                text-align: center;
+            }
+        .t6{
+                background-color: #868ae8;
+                background-image:url(C:/Users/aa136/Desktop/店铺.gif);
+                background-repeat: no-repeat;
+                background-position:90px 40px;
+                border-radius:10px;   
+                width:270px;
+                height:200px;
+                color:white;
+                text-align: center;
+            }
+        .t7{
+                background-color: #f97a74;
+                background-image:url(C:/Users/aa136/Desktop/详情页.gif);
+                background-repeat: no-repeat;
+                background-position:90px 40px; 
+                border-radius:10px;  
+                width:270px;
+                height:200px;
+                color:white;
+                text-align: center;
+            }
+        .t8{
+                background-color: #2f9ae5;
+                background-image:url(C:/Users/aa136/Desktop/整改.gif);
+                background-repeat: no-repeat;
+                background-position:90px 40px;
+                border-radius:10px;   
+                width:270px;
+                height:200px;
+                color:white;
+                text-align: center;
+            }
+
+
+.photoName{              /*td里面的文字的样式*/
+            margin-top:150px; 
+}
+/*全网营销*/
+.market{                           
+            height:350px;
+            background-color:#142434;
+            position:relative ;
+        }
+/*接下来这几个以market为首的类名是 MARKET这个块的开头的样式 */
+.market1{                                                
+            font-size:30px;
+            float:left;
+            color:#f49800;
+            margin-left:500px;
+            margin-top: 15px;
+            padding-right:6px;
+            border-right:5px solid #f49800;   
+        }
+.market2{
+            float:left;
+            margin-top:7px;
+            margin-left:5px;  
+            line-height:2px;
+            color:aliceblue; 
+    }
+.market3{
+            font-size: 20px;
+            font-weight:900px;
+    }
+.market4{
+            font-size: 13px;
+    }
+.market5{   
+            height:30px;                     /*文案策划*/
+            margin-top:30px;
+            margin-left:600px;
+            float:left;
+            clear:left;
+            color:#ffffff ;
+        }
+
+.box1{
+        overflow:hidden;      /*三个圆的父元素*/
+        position:absolute;
+        left:28%;
+        top:40%; 
+    }
+.d1{
+        float:left;
+    }
+.d1:nth-of-type(2n){       /*偶数div*/
+                        width:100px;
+                        height:2px;
+                        background-color:#00f6f7;
+                        margin-top:60px; 
+                    }                          /*奇数div*/
+.d1:nth-of-type(2n+1){
+                        width:120px;
+                        height:120px;
+                        border-radius:50%;  
+                        border:1px solid #00f6f7;
+                        position:relative;
+                    }
+.img{
+        position:absolute;
+        left:30px;
+        top:30px;
+    }
+.word1{           /*第一个圆下面的文字*/
+        color:#ffffff;
+        left:410px;
+        top:280px;
+        position:absolute;
+        }
+.word2{            /*第二个圆下面的文字*/ 
+        color:#ffffff;
+        left:630px;
+        top:280px;
+        position:absolute;
+    }
+.word3{             /*第三个圆下面的文字*/
+        color:#ffffff;
+        left:850px;
+        top:280px;
+        position:absolute;
+    }
+.website{                /*网站优化这个块 */
+            height:380px;
+            background-color:#d13864 ;
+        }
+.website1{
+            color:#ffffff;
+            font-size:30px;
+            padding-top:30px;
+            margin-bottom:20px;  
+            margin-left:270px;  
+        }
+.photo{             /*两张图片的父容器*/
+        height:180px;
+        position:relative;
+        margin-left:270px; 
+    }
+.photo1{        /*第一张图片的样式*/
+            float:left;
+            border-radius:10px;
+            position:relative; 
+        }
+.photo2{    /*第二张图片*/   
+            float:left;
+            margin-left:20px; 
+            position:relative;
+        }
+img{        /*把图片的position定为relative,以便后面的文字的定位*/    
+        border-radius:5px;
+        position:relative;  
+    }
+.leftbottom{        /*鼠标悬停后出现的文字的父容器*/
+                position:absolute;
+                width:100%;
+                height: 40px;
+                top:82%;
+                color:#ffffff;
+                transition: opacity .25s ease-in-out, background .25s ease-in-out;  
+                -moz-transition: opacity .25s ease-in-out, background .25s ease-in-out;  
+                -webkit-transition: opacity .25s ease-in-out, background .25s ease-in-out;  
+                z-index: 1; 
+                opacity: 0;
+                border-bottom-left-radius:5px;
+                border-bottom-right-radius:5px;
+                filter:Alpha(opacity=50);
+                *zoom:1 ;  
+            }
+.leftbottom:hover {   /*当鼠标悬停在图片上出现的样式*/
+                    opacity: 0.7;  
+                    color: #ffffff;  
+                    background: rgb(65, 64, 64);
+                    cursor: pointer;  
+                }  
+.hoverWord{           /*当鼠标悬停在图片上出现的文字的样式*/
+            font-size:25px;
+            padding-left: 5%; 
+        }
+.container7{       /*品牌推广这个div的样式*/
+                height:550px;
+                background-color:#ffffff;
+                position:relative;
+                background-image:url(C:/Users/aa136/Desktop/矩形.jpg);
+                background-position:0px 274px;
+                background-repeat:no-repeat;
+        }
+.extendName{
+                margin-left:270px;
+                padding-top: 30px;
+                font-size: 30px;
+                margin-bottom:10px; 
+        }
+.extend{        
+            position:absolute;
+            left:270px;
+    }
+            .extendPhoto1{      /*品牌推广这里的第一张图片*/
+                            width:250px;
+                            height:320px;
+                            background-image:url(C:/Users/aa136/Desktop/CCTV.jpg);
+                            background-color:#f49800;
+                            background-position:0px 0px;
+                            background-repeat:no-repeat;
+                            border:1px solid blue;
+                        
+                    }
+           .extendPhoto2{       /*品牌推广这里的第二张图片*/
+                            width:250px;
+                            height:320px;
+                            background-image:url(C:/Users/aa136/Desktop/社交平台.jpg);
+                            background-color:#2ac471;
+                            background-position:0px 0px;
+                            background-repeat:no-repeat;  
+                            border:1px solid blue;
+                    }
+            .extendPhoto3{  /*品牌推广这里的第三张图片*/
+                            width:250px;
+                            height:320px;
+                            background-image:url(C:/Users/aa136/Desktop/朋友圈.jpg);
+                            background-color:#f49800;
+                            background-position:0px 0px;
+                            background-repeat:no-repeat;
+                            border:1px solid blue;
+                    }
+                    .extendTitle{       /*每张图片里的title*/
+                                    font-size:25px;
+                                    color:#ffffff;
+                                    padding-top:130px;
+                                    text-align:center;   
+                                }
+                    .extendPhotoContainer1{     /*第一张图片里的内容的div*/
+                                            margin-left:55px;
+                                            margin-right:50px;
+                                            margin-bottom:70px;
+                                        }
+                    .extendPhotoContainer2{      /*第二张图片里的内容的div*/
+                        
+                                            margin-left:45px;
+                                            margin-right:40px;
+                                            margin-bottom: 70px; 
+                                        }
+                    .extendPhotoContainer3{     /*第三张图片里的内容的div*/ 
+                                            margin-left:50px;
+                                            padding-left:10px; 
+                                            margin-right:50px;
+                                            margin-bottom: 70px; 
+                                        }
+                        .extendWord{                /*图片里的内容*/
+                                        border-top:1px solid #ffffff;
+                                        padding-top:20px;
+                                        line-height:15px;
+                                        font-size:13px; 
+                                        white-space:pre;
+                                        color:#ffffff;   
+                                }
+/*特色服务这个div*/
+.FEATURE{
+            height:380px;
+            position:relative;
+        }
+    .FEATURE1{
+                font-size:30px;
+                position: absolute;
+                margin-left:500px;
+                margin-top:15px; 
+                padding-right:6px;
+                border-right:5px solid #f49800;   
+        }
+    .FEATURE2{
+                position:absolute;
+                margin-top:7px;
+                margin-left:650px;  
+                line-height:2px;
+                font-size:13px; 
+        } 
+    .FEATURE3{
+                font-weight:bold;
+                font-size:20px; 
+        }
+    .FEATURE4{
+                position:absolute;
+                left:270px;
+                top:80px;
+            }
+/* 把以下内容用一个table 4个td解决 */
+.FeaturePhoto1{     
+                width:190px;
+                height:220px;
+                border-radius:5px;
+                background-color:#868ae8;
+                background-image:url(C:/Users/aa136/Desktop/品牌维护.gif);
+                background-repeat:no-repeat;
+                background-position: 60px 30px;  
+                text-align: center;
+                color:#ffffff; 
+            }
+.FeaturePhoto2{
+                width:190px;
+                height:220px;
+                border-radius:5px;
+                background-color:#f97a74;
+                background-image:url(C:/Users/aa136/Desktop/诚信.gif);
+                background-repeat:no-repeat;
+                background-position: 60px 30px;  
+                text-align: center;
+                color:#ffffff;    
+            }
+.FeaturePhoto3{
+                width:190px;
+                height:220px;
+                border-radius:5px;
+                background-color:#ab6491;
+                background-image:url(C:/Users/aa136/Desktop/检测.gif);
+                background-repeat:no-repeat;
+                background-position: 60px 30px;
+                color:#ffffff;
+                text-align: center;
+            }
+.FeaturePhotoRight{
+                    width:300px;
+                    height:220px;
+                }
+.dec{
+        margin-top:90px;
+        margin-bottom:20px; 
+    }
+
+.FeaturePhotoWord{
+                    font-size:13px;
+                    line-height:25px;  
+                }
+/* 当鼠标hover到的表格发生的变化 */
+td.FeaturePhoto1:hover{     
+                            color:black;
+                            background-image:url(C:/Users/aa136/Desktop/品牌维护1.gif);
+                            cursor:pointer;
+                    }
+
+td.FeaturePhoto2:hover{
+                            color:black;
+                            background-image:url(C:/Users/aa136/Desktop/诚信1.gif);
+                            cursor:pointer;
+                    }
+td.FeaturePhoto3:hover{
+                            color:black;
+                            background-image:url(C:/Users/aa136/Desktop/检测1.gif);
+                            cursor:pointer;
+                    }
+p.aa{
+        font-size:13px; 
+}
+FeatureBottom{      /*feature这里的了解详情*/
+                width:80px;
+                height:30px;
+                color:#ffffff;
+                padding:5px 20px; 
+                background-color:#f49800;
+                border-radius:5px;  
+            }
+FeatureBottom:hover{    /*当鼠标hover到了解详情时发生的变化*/
+                background-color:#2ac471;
+                cursor:pointer;
+            }
+/* 服务优势这个块用一个div解决 */
+.merit{
+            background-color:#142434;
+            height:140px;
+            position:relative; 
+    }
+.meritHead1{
+                font-size:30px;
+                position:absolute; 
+                color:#f49800;
+                margin-left:530px;
+                margin-top: 50px;
+                padding-right:6px;
+                border-right:5px solid #f49800;   
+        }
+.meritHead2{
+                position:absolute;
+                margin-top:40px;
+                margin-left:645px;  
+                line-height:2px;
+                color:aliceblue; 
+        }
+.meritHead3{
+                font-size: 20px;
+                font-weight:900px;
+        }
+.meritHead4{
+                font-size: 13px;
+        }
+.white{     /*小白条*/
+        height:15px;
+    } 
+.merit1{        /*优势1的背景*/
+            height:316px;
+            position:relative;
+            background: -webkit-linear-gradient(left,orange,white); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right,orange,white); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, orange,white); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right,orange,white); /* 标准的语法 */
+        }
+.a1{
+            color:#ffffff;
+            position:absolute;
+            font-weight:bold; 
+            font-size:20px;
+            margin-top:80px;  
+            margin-left:250px;
+        }
+
+
+.a2{
+        font-size:16px; 
+        line-height:30px;
+        margin-top: 20px;
+        font-weight:normal; 
+    }
+.a3{
+
+    margin-left:65%;
+    float:left;
+    position:absolute; 
+
+    }
+.a4{            /*把圆圈的透明度设为0.5，并使其在最上面显示*/
+        opacity:0.5;
+        z-index:999; 
+        position:absolute;
+        margin-left:58%;
+        padding-top: 25px;
+        float:left; 
+    }
+.merit2{        /*优势2的背景*/
+            height:300px;
+            position:relative; 
+            background: -webkit-linear-gradient(left,white,green); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right,white,green); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right,white,green); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right,white,green); /* 标准的语法 */
+    
+    }
+.b1{            /*把圆圈的透明度设为0.5，并使其在最上面显示*/
+        opacity:0.5;
+        z-index:999; 
+        position:absolute;
+        margin-left:250px;
+        padding-top: 25px;
+        float:left; 
+    }
+.b2{
+    padding-top:10px; 
+    margin-left: 380px;
+    float:left;
+    position:absolute;  
+}
+.b3{
+
+    margin-top:80px; 
+    margin-left: 800px;
+    color:#ffffff;
+    position:absolute;
+}
+.b4{
+        font-weight:bold;
+        font-size: 20px;
+        margin-bottom:20px; 
+    }
+.b5{
+        font-size:16px;
+        line-height:30px; 
+    }
+.merit3{         /*优势3的背景*/
+            height:316px;
+            position:relative;
+            background: -webkit-linear-gradient(left,orange,white); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right,orange,white); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right, orange,white); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right,orange,white); /* 标准的语法 */
+    }
+.c1{
+
+        margin-top:80px; 
+        margin-left: 250px;
+        color:#ffffff;
+        position:absolute;
+    }
+.c2{
+        font-weight:bold;
+        font-size: 20px;
+        margin-bottom:20px; 
+    }
+.c3{
+        font-size:16px;
+        line-height:30px; 
+    }
+.c4{            /*把圆圈的透明度设为0.5，并使其在最上面显示*/
+        opacity:0.5;
+        z-index:999; 
+        position:absolute;
+        margin-left:990px;
+        padding-top: 25px;
+        float:left; 
+}
+.c5{
+        padding-top:10px; 
+        margin-left: 600px;
+        float:left;
+        position:absolute;  
+        }          
+.merit4{         /*优势4的背景*/
+            height:310px;
+            position:relative; 
+            background: -webkit-linear-gradient(left,white,green); /* Safari 5.1 - 6.0 */
+            background: -o-linear-gradient(right,white,green); /* Opera 11.1 - 12.0 */
+            background: -moz-linear-gradient(right,white,green); /* Firefox 3.6 - 15 */
+            background: linear-gradient(to right,white,green); /* 标准的语法 */
+
+    }
+.e1{              /*把圆圈的透明度设为0.5，并使其在最上面显示*/ 
+        opacity:0.5;
+        z-index:999; 
+        position:absolute;
+        margin-left:585px;
+        padding-top: 10px;
+        float:left; 
+    }
+.e2{
+        padding-top:10px; 
+        margin-left: 250px;
+        float:left;
+        position:absolute;  
+        }
+/* 企业案例 */
+.case{
+        position:relative;
+        height:400px;
+        background-color:#142434;
+    }
+.case1{                                     /*CASE*/
+        font-size:30px;
+        float:left;
+        margin-left:540px;
+        margin-top:15px; 
+        padding-right:6px;
+        color:#f49800;
+        border-right:5px solid #f49800;   
+    }
+.case2{
+        float:left;
+        margin-top:7px;
+        margin-left:5px;  
+        line-height:2px;
+        font-size:13px; 
+        color:#ffffff;
+    }
+.case3{
+        font-weight:bold;
+        font-size:20px; 
+    } 
+.box{
+    overflow:hidden;
+}                 /*给这两行圆定个父元素*/
+.d:nth-of-type(2n){                    /*偶数个*/
+                    width:120px;
+                    height:120px;
+                    border-radius:50%;
+                    background-image:url(C:/Users/aa136/Desktop/logo2.gif);
+                    background-position: center;
+                    background-repeat: no-repeat;  
+                    background-color:#ffffff;
+                    justify-content:center; 
+                }
+    .d:nth-of-type(2n+1){           /*奇数个*/
+                            width:120px;
+                            height:120px;
+                            border-radius:50%;
+                            background-image:url(C:/Users/aa136/Desktop/logo1.gif);
+                            background-position: center;
+                            background-repeat: no-repeat;  
+                            background-color:#ffffff; 
+                        }
+    .anLi1{
+            position:absolute;
+            left:200px;
+            top:80px;
+        }
+    .d{
+        float:left;
+        margin-left:30px; 
+    }
+    .anLi2{
+        position:absolute;
+        left:200px;
+        top:240px;
+    }
+    .menu{
+            position:relative;
+            height:1000px;
+    }
+
+.menu1{
+        font-size:30px;
+        float:left;
+        margin-left:530px;
+        margin-top:15px;
+        padding-right:6px;
+        border-right:5px solid #f49800;   
+        }
+.menu2{
+        float:left;
+        margin-top:7px;
+        margin-left:5px;  
+        line-height:2px;
+        font-size:13px;
+        } 
+.menu3{
+        font-weight:bold;
+        font-size:20px; 
+        }
+.cafe{                                     /*微营销创业套餐这里的title*/
+        position:absolute;
+        width:900px;
+        height:50px;
+        line-height:50px;  
+        background-color:#f49800;
+        text-align:center;
+        border-radius:5px;
+        left:240px;
+        top:100px;   
+        }
+.tab{                                      /*表格的样式*/
+        position:absolute;
+        top:150px;
+        left:240px;
+        border-radius:5px;
+        border:1px solid black; 
+        background-color:#dcdcdc;
+        }
+.col1{              /*th为项目*/
+        width:180px;
+        border-right:1px solid #ffffff;
+        border-bottom:1px solid #ffffff; 
+        height:40px;
+        font-weight:bold;
+        text-align:center;
+        line-height:40px;  
+        }
+.col2{               /*th为内容详情*/
+ width:320px;
+ height:40px;
+ border-right:1px solid #ffffff;
+ border-bottom:1px solid #ffffff;
+ font-weight:bold;
+ padding-left:20px; 
+ line-height:40px;   
+}
+.col3{              /*th为预期效果*/
+        width:343px;
+        height:40px;
+        border-bottom:1px solid #ffffff;
+        font-weight:bold;
+        padding-left:20px;
+        line-height:40px;   
+    }
+.col4{          /*把每个格定位为relative方便其内容的定位*/
+        position: relative;
+        border-right:1px solid #ffffff;
+        border-bottom:1px solid #ffffff; 
+        width:180px;
+        height:40px;
+    }
+.colChild{      /*第一列格子里的内容的样式*/
+            position: absolute; 
+            left:35px;
+            top:10px;
+            font-size:15px; 
+        }
+.colSquare{                            /*第一列前面的小方框的样式*/
+            position: absolute;
+            width:13px;
+            height:13px;
+            background-color:#ffffff;
+            left:15px; 
+            top:15px;
+        }
+.col5{                                 /*内容详情内的样式*/
+        font-size:13px;
+        width:320px;
+        height:40px;
+        padding-left:20px;
+        border-right:1px solid #ffffff;
+        border-bottom:1px solid #ffffff;   
+        }
+.col6{                               /*预期效果内的样式*/ 
+        font-size:13px;
+        width:343px;
+        height:40px;
+        padding-left:20px;
+        border-bottom:1px solid #ffffff;    
+    }
+/* 接下来三个是最后一行格子的样式 */
+.col7{                                    
+        border-right:1px solid #ffffff;
+        height:20px;
+        width:160px; 
+        }
+.col8{
+        border-right:1px solid #ffffff;
+        height:20px;
+        width:280px;
+        }
+.col9{
+        width:303px;
+        height:20px;
+        }
+.tip{                                      /*了解详情*/
+        width:100px;
+        position:absolute;
+        left:45%;
+        top:750px;
+        height:40px;
+        line-height:40px;
+        background-color:#f49800;
+        color:#ffffff;
+        border-radius:5px; 
+        text-align:center;    
+        }
+.tip:hover{                              /*了解详情的hover*/
+            background-color:#2eb66d;
+            cursor:pointer; 
+        }
+/* 最后面这个块的样式 */
+.foot{
+        height:450px;
+        background-color:#142434;
+        width:100%;
+        color:#d1d1d1;
+        position:relative ;
+        white-space:pre;
+    }
+.footChild2{
+                width:200px;
+                height:50px;
+                left:180px;
+                top:80px;
+                position:absolute;
+                background-color: #0db05f;
+            }
+.footChild3{
+                position:absolute;
+                left:180px;
+                top:130px;
+                }
+.name{
+        background-color:#ffffff ;
+        color:black;
+        font-size:13px;
+        padding:1px;  
+        border-right:1px solid black; 
+    }
+.password{
+            background-color:#ffffff ;
+            text-align:center;
+            color:black;
+            font-size:13px;
+            padding:1px;  
+            border-right:1px solid black;
+            white-space: pre;
+        }
+.form{
+        position:absolute;
+        left:100px;
+        top:160px;
+        }
+.join-in{
+            background-color:#fea717;
+            position:absolute;
+            left:200px;
+            top:280px;
+            width:50px;
+            font-size:14px; 
+            text-align:center;
+    }
+.join-up{
+            background-color:#fea717;
+            position:absolute;
+            left:280px;
+            top:280px;
+            width:50px;
+            font-size:14px; 
+            text-align:center;
+            }
+.ab{
+        height:210px;
+        width:1px;
+        background-color:#d1d1d1;
+        position:absolute;
+        left:420px;
+        top:120px;
+        }
+.map{
+        position:absolute;
+        left:460px;
+        top:70px;
+        line-height: 8px;
+        font-size:13px;
+        white-space:pre;  
+   }
+.map1{
+        margin-bottom:20px;
+        font-weight:bold;
+        font-size:16px;   
+   }
+.bb{
+        height:210px;
+        width:1px;
+        background-color:#d1d1d1;
+        position:absolute;
+        left:620px;
+        top:120px;
+  }
+.about{
+        position:absolute;
+        left:640px;
+        top:40px;
+        font-weight:bold;
+        }
+.about1{
+            margin-bottom:20px; 
+    }
+.public{
+            position:absolute;
+            left:760px;
+            top:130px;
+            line-height: 8px;
+            font-size:13px; 
+      }
+.public1{
+            font-weight:bold;
+            font-size:16px;  
+      }
+.public2{
+            font-weight:bold; 
+      }
+.cc{
+        height:210px;
+        width:1px;
+        background-color:#d1d1d1;
+        position:absolute;
+        left:930px;
+        top:120px;
+        }
+.contact{
+            position:absolute;
+            left:980px;
+            top:40px;
+            }
+.QQ1{
+        font-size:13px; 
+        }
+.QQ2{
+        background-color:#fea717;
+        font-size:10px;
+        text-align:center;
+        margin-left: 20px;   
+  }
+.contact2{
+            position:absolute;
+            left:50px;
+            top:90px;
+        }
+.contact3{
+            position:absolute;
+            left:50px;
+            top:170px;
+        }
+.contact4{
+            position:absolute;
+            left:50px;
+            top:260px;
+        }
+.footer{
+            right:300px;
+            position:absolute;
+            top:320px;
+            text-align:center;
+            line-height: 5px; 
+            font-size:13px; 
+        }
+.yellow{            /*f服务项目这里的打钩*/
+            background:url(C:/Users/aa136/Desktop/单.gif) no-repeat 0px 0px;
+            background-size:10px 10px;
+      
+     }
+/* 服务套餐这里点击小方框打钩及字体变红 */
+.change{
+            background:url(C:/Users/aa136/Desktop/单.gif) no-repeat 0px 0px;
+            background-size:10px 10px;
+    }
+.red{
+        color:red;
+}
