@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <style>
+            /* 把原本的画面遮掉 */
+            .loading{
+                    width:100%;
+                    height:100%;
+                    position:fixed;
+                    top:0;
+                    left:0;
+                    z-index:100;
+                    background: #fff;
+                }
+                /* 小柱子样子的变化 */
+             @-webkit-keyframes ff{
+                                    0%{
+                                    transform: scale(1);
+                                }
+                                    50%{
+                                     transform: scale(0.3);
+                                }
+                                    100%{
+                                    transform: scale(1);
+                                }
+                            }
+            @keyframes ff{
+                            0%{
+                            transform: scale(1);
+                        }
+                            50%{
+                            transform: scale(0.3);
+                        }
+                            100%{
+                            transform: scale(1);
+                        }
+
+                    }
+            .ff{
+                margin-left:45%;
+                margin-top:25%; 
+                
+            }
+            /* 每个小柱子的最初的样子 */
+            .ff i{
+                    display: inline-block;
+                    width: 10px;
+                    height: 50px;
+                    margin: 0 2px;
+                    background-color:red;
+                    border-radius: 5px;
+                    -webkit-animation: ff 1s ease-in-out 0.1s infinite;
+                    animation: ff 1s ease-in-out 0.1s infinite;
+                }
+
+            /* 定义每个小柱子发生变化的样式 */
+            .ff i:nth-child(1){
+                                -webkit-animation: ff 1s ease-in-out 0.1s infinite;
+                                animation: ff 1s ease-in-out 0.1s infinite;
+                            }
+            .ff i:nth-child(2){
+                                -webkit-animation: ff 1s ease-in-out 0.2s infinite;
+                                animation: ff 1s ease-in-out 0.2s infinite;
+                            }   
+            .ff i:nth-child(3){
+                                -webkit-animation: ff 1s ease-in-out 0.3s infinite;
+                                animation: ff 1s ease-in-out 0.3s infinite;
+                            }   
+            .ff i:nth-child(4){
+                                -webkit-animation: ff 1s ease-in-out 0.4s infinite;
+                                animation: ff 1s ease-in-out 0.4s infinite;
+                            }   
+            .ff i:nth-child(5){
+                                -webkit-animation: ff 1s ease-in-out 0.5s infinite;
+                                animation: ff 1s ease-in-out 0.5s infinite;
+                            }           
+            #containers{            /*loading加载后出现的页面的父容器*/
+                            color:#ffffff;
+                            background-color:#6d6d6f;
+                            width:100%;
+                            height:500px;
+                            position: relative;
+                            font-size:30px;
+                    }
+            .jiao1{                 /*标题的左上角*/
+                    position: absolute;
+                    left:41%;
+                    top:3%;
+                }
+            .jiao2{                    /*标题的右下角*/
+                    position: absolute;
+                    left:54.5%;
+                    top:7%;
+                }
+            .title1{
+                    position:absolute;
+                    left:42%;
+                    top:4%;
+                    font-weight:bold;
+    
+                }
+            #close{                    /*取消键的样式*/
+                    left:95%;
+                    top:5%;
+                    position:absolute;
+                }
+            #logo{                     /*图片那个地方*/
+                    background-color:#ffffff;
+                    width:150px;
+                    height:150px;
+                    position:absolute;
+                    left:20%;
+                    top:20%;
+                }
+            .bottomTitle{
+                            left:21%;
+                            top:55%;
+                            position:absolute;
+                            font-size: 28px;
+                        }
+            .caseContainers{        /*内容*/
+                                position:absolute;
+                                left:41%;
+                                top:20%;
+                                font-size: 20px;
+                            }
+            .more{
+                    position: absolute;
+                    left:80%;
+                    top:60%;
+                }
+        </style>
+    </head>
+    <body>
+        <!-- 这里是一个loading -->
+        <div class="loading">
+                <div class="ff">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                </div>
+        </div>
+        <!-- loading加载完后出现的页面 -->
+        <div id="containers">
+                <div class="jiao1"><img src="C:/Users/aa136/Desktop/左上角.gif" alt="" style="width:30px;height:30px;">
+                </div>
+                <div class="jiao2"><img src="C:/Users/aa136/Desktop/右下角.gif" alt=""style="width:30px;height:30px;">
+                </div>
+                <div class="title1">企业案例标题
+                </div>
+                <!-- 这里是个取消的符号 -->
+                <a href="javascript:closeLogining();"><img src="C:/Users/aa136/Desktop/关闭.gif" id="close" style="width:16px;height:16px;"  alt=""></a>
+                <div id="logo">
+                        <img src="C:/Users/aa136/Desktop/logo.gif" alt="" style="width:70px;height:90px;padding-left:40px;padding-top:30px;">
+                </div>
+                <div class="bottomTitle">企业名称</div>
+                <div class="caseContainers">企业案例介绍:<br>       
+                        <span style="padding-left: 40px;"> 啦啦啦啦阿拉拉了，啦啦啦啦啦啦啦啦啦，啦啦</span><br>啦啦啦啦啦啦啦，啦啦啦啦啦，啦爽收歪歪定期啦啦<br>上课的角度......
+                </div>
+                <div class="more">
+                    <a href="http://www.kugou.com/mvweb/html/mv_396200.html">
+                        <img src="C:/Users/aa136/Desktop/more.gif" style="width:70px;height:35px;">
+                    </a>
+                </div>
+        </div>
+    <script>
+            $(function(){
+                setInterval(function(){
+                    $(".loading").fadeOut();
+                        },8000)             //loading加载8秒后消失
+            })
+         
+            function closeLogining(){      //按取消键关闭页面
+                document.getElementById("containers").style.display="none";
+                }
+
+    </script>
+    </body>
+</html>
